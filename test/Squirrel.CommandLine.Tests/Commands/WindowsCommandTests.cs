@@ -151,8 +151,8 @@ namespace Squirrel.CommandLine.Tests.Commands
 
             string[]? searchPaths = command.SquirrelAwareExecutableNames;
             Assert.Equal(2, searchPaths?.Length);
-            Assert.Contains("MyApp1.exe", searchPaths);
-            Assert.Contains("MyApp2.exe", searchPaths);
+            Assert.Contains("MyApp1.exe", searchPaths!);
+            Assert.Contains("MyApp2.exe", searchPaths!);
         }
 
         [Fact]
